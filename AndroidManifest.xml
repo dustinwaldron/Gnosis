@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.dwaldron.gnosis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gnosis"
+        android:label="@string/app_name"
+        android:logo="@drawable/gnosis"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.dwaldron.gnosis.HomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.About"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.GamesMenu"
+            android:label="@string/title_activity_games_menu" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.VideoScreen"
+            android:label="@string/title_activity_video_screen" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.bible.BibleBookMenu"
+            android:label="@string/title_activity_bible_book_menu" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.games.frog.FrogGameMain"
+            android:label="@string/title_activity_frog_game_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.games.frog.FrogGame"
+            android:label="@string/title_activity_frog_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.dwaldron.gnosis.games.ski.SkiGameMain"
+            android:label="@string/title_activity_ski_game_main" >
+        </activity>
+    </application>
+
+</manifest>
